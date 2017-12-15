@@ -6,7 +6,7 @@
 
     <groupId>ua.bazarchik</groupId>
     <artifactId>bazarchik</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <name>BazarchikUA</name>
@@ -18,7 +18,7 @@
     </properties>
 
     <build>
-        <finalName>topjava</finalName>
+        <finalName>BazarchikUA</finalName>
         <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>

@@ -4,8 +4,9 @@ import java.time.LocalDateTime;
 
 
 public class UserPost {
-    private Long id;
+    private Long id;  /*https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html*/
     private String title;
+    private int idCategory;
     private LocalDateTime registeredTime;
     private LocalDateTime unRegisteredTime;
     private String description;
