@@ -82,4 +82,18 @@ public class UserPost {
     public void setPrice(Integer price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "UserPost{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", idCategory=" + idCategory +
+                ", registeredTime=" + registeredTime +
+                ", unRegisteredTime=" + unRegisteredTime +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", active=" + active +
+                '}';
+    }
 }
