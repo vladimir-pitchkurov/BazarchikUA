@@ -10,6 +10,7 @@ public class UserPost {
     private LocalDateTime unRegisteredTime;
     private String description;
     private Integer price;  /*в копейках*/
+    private boolean active;
 
     public UserPost() {
     }
@@ -18,6 +19,19 @@ public class UserPost {
         this.id = id;
         this.title = title;
         this.registeredTime = LocalDateTime.now();
+    }
+
+    public UserPost(String title) {
+        this.title = title;
+        this.registeredTime = LocalDateTime.now();
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     public Long getId() {
