@@ -1,11 +1,10 @@
-package ua.bazarchik.repository;
+package ua.bazarchik.service;
 
 import ua.bazarchik.model.UserPost;
 
 import java.util.Collection;
-import java.util.List;
 
-public interface PostRepo {
+public interface PostService {
     Collection<UserPost> getAllUserPosts(Integer userId);
 
     Collection<UserPost> getPostsByCategoryId(int idCategory);

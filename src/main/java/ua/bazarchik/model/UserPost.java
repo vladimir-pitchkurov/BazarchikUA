@@ -27,6 +27,25 @@ public class UserPost {
         this.registeredTime = LocalDateTime.now();
     }
 
+    public UserPost(Long id, String title, int idCategory, LocalDateTime registeredTime, LocalDateTime unRegisteredTime, String description, Integer price, boolean active) {
+        this.id = id;
+        this.title = title;
+        this.idCategory = idCategory;
+        this.registeredTime = registeredTime;
+        this.unRegisteredTime = unRegisteredTime;
+        this.description = description;
+        this.price = price;
+        this.active = active;
+    }
+
+    public int getIdCategory() {
+        return idCategory;
+    }
+
+    public void setIdCategory(int idCategory) {
+        this.idCategory = idCategory;
+    }
+
     public boolean isActive() {
         return active;
     }
@@ -81,6 +100,10 @@ public class UserPost {
 
     public void setPrice(Integer price) {
         this.price = price;
+    }
+
+    public boolean isNew(){
+        return id == null;
     }
 
     @Override

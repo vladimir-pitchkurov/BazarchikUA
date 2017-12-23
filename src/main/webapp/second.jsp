@@ -33,6 +33,18 @@
     </c:forEach>
     </tbody>
 </table>
+<table border="1" cellpadding="8" cellspacing="0">
+    <tbody>
+    <c:forEach items="${post11}" var="post1">
+        <tr class="${post1.id%2 == 0 ? 'normal' : 'exceeded'}">
+            <td>${post1.id}</td>
+            <td>${post1.title} </td>
+            <td>${fn:formatDateTime(post1.registeredTime)}</td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>
+
 
 </body>
 </html>
